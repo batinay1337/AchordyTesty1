@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F2010D02971D7F500C0B895 /* AchordyTestyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2010CF2971D7F500C0B895 /* AchordyTestyApp.swift */; };
+		9F2010D22971D7F500C0B895 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2010D12971D7F500C0B895 /* ContentView.swift */; };
+		9F2010D42971D7F600C0B895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2010D32971D7F600C0B895 /* Assets.xcassets */; };
+		9F2010D72971D7F600C0B895 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2010D62971D7F600C0B895 /* Preview Assets.xcassets */; };
+		9FB3F4BC2972B8D200856919 /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4BB2972B8D200856919 /* TunerView.swift */; };
+		9FB3F4BE2972B91F00856919 /* TunerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4BD2972B91F00856919 /* TunerData.swift */; };
+		9FB3F4C02972B93A00856919 /* ScaleNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4BF2972B93A00856919 /* ScaleNote.swift */; };
+		9FB3F4C22972B97100856919 /* ModifierPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4C12972B97100856919 /* ModifierPreference.swift */; };
+		9FB3F4C42972B99100856919 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4C32972B99100856919 /* Frequency.swift */; };
+		9FB3F4C82972BA2200856919 /* TranspositionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4C72972BA2200856919 /* TranspositionMenu.swift */; };
+		9FB3F4CA2972D66B00856919 /* NoteTicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4C92972D66B00856919 /* NoteTicks.swift */; };
+		9FB3F4CC2972D68C00856919 /* NoteDistanceMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4CB2972D68C00856919 /* NoteDistanceMarkers.swift */; };
+		9FB3F4CE2972D6ED00856919 /* MicrophoneAccessAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4CD2972D6ED00856919 /* MicrophoneAccessAlert.swift */; };
+		9FB3F4D02972D6FE00856919 /* MatchedNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4CF2972D6FE00856919 /* MatchedNoteView.swift */; };
+		9FB3F4D22972D71B00856919 /* MatchedNoteFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4D12972D71B00856919 /* MatchedNoteFrequency.swift */; };
+		9FB3F4D42972D73C00856919 /* MainNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4D32972D73C00856919 /* MainNoteView.swift */; };
+		9FB3F4D62972D75800856919 /* CurrentNoteMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4D52972D75800856919 /* CurrentNoteMarker.swift */; };
+		9FB3F4D92972DBA700856919 /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4D82972DBA700856919 /* ActivityVC.swift */; };
+		9FB3F4DB2972DBC400856919 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4DA2972DBC400856919 /* Alignment.swift */; };
+		9FB3F4DD2972DBE000856919 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4DC2972DBE000856919 /* Color+Extensions.swift */; };
+		9FB3F4DF2972DC0200856919 /* Color+MusicalDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4DE2972DC0200856919 /* Color+MusicalDistance.swift */; };
+		9FB3F4E12972DC2F00856919 /* ColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4E02972DC2F00856919 /* ColorAnimation.swift */; };
+		9FB3F4E32972DC5100856919 /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4E22972DC5100856919 /* DeviceExtension.swift */; };
+		9FB3F4E62972DE3900856919 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4E52972DE3900856919 /* Theme.swift */; };
+		9FB3F4EB2972DE7B00856919 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4EA2972DE7B00856919 /* SettingsScreen.swift */; };
+		9FB3F4ED2972DF7C00856919 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4EC2972DF7C00856919 /* AboutScreen.swift */; };
+		9FB3F4EF2972DFEE00856919 /* SettingListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4EE2972DFEE00856919 /* SettingListItem.swift */; };
+		9FB3F4F52972E06200856919 /* TunerSettingsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4F42972E06200856919 /* TunerSettingsListItem.swift */; };
+		9FB3F4F72972E07E00856919 /* TunerSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4F62972E07E00856919 /* TunerSettingsScreen.swift */; };
+		9FB3F4FC2972E24200856919 /* TunerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F4FB2972E24200856919 /* TunerScreen.swift */; };
+		9FB3F5072972E4EC00856919 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F5062972E4EC00856919 /* AudioEngine.swift */; };
+		9FB3F5092972E50F00856919 /* MicrophonePitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F5082972E50F00856919 /* MicrophonePitchDetector.swift */; };
+		9FB3F50B2972E52800856919 /* Mixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F50A2972E52800856919 /* Mixer.swift */; };
+		9FB3F50D2972E54900856919 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F50C2972E54900856919 /* Node.swift */; };
+		9FB3F5102972E57600856919 /* PitchTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F50F2972E57600856919 /* PitchTap.swift */; };
+		9FB3F5122972E58C00856919 /* PitchTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F5112972E58C00856919 /* PitchTracker.swift */; };
+		9FB3F5152972E61B00856919 /* base.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F5142972E61B00856919 /* base.c */; };
+		9FB3F5182972E64C00856919 /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F5172972E64C00856919 /* fft.c */; };
+		9FB3F51D2972E7DB00856919 /* ptrack.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3F51C2972E7DB00856919 /* ptrack.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F2010CC2971D7F500C0B895 /* AchordyTesty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AchordyTesty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2010CF2971D7F500C0B895 /* AchordyTestyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchordyTestyApp.swift; sourceTree = "<group>"; };
+		9F2010D12971D7F500C0B895 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F2010D32971D7F600C0B895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F2010D62971D7F600C0B895 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FB3F4BB2972B8D200856919 /* TunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerView.swift; sourceTree = "<group>"; };
+		9FB3F4BD2972B91F00856919 /* TunerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerData.swift; sourceTree = "<group>"; };
+		9FB3F4BF2972B93A00856919 /* ScaleNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleNote.swift; sourceTree = "<group>"; };
+		9FB3F4C12972B97100856919 /* ModifierPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierPreference.swift; sourceTree = "<group>"; };
+		9FB3F4C32972B99100856919 /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		9FB3F4C72972BA2200856919 /* TranspositionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranspositionMenu.swift; sourceTree = "<group>"; };
+		9FB3F4C92972D66B00856919 /* NoteTicks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTicks.swift; sourceTree = "<group>"; };
+		9FB3F4CB2972D68C00856919 /* NoteDistanceMarkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDistanceMarkers.swift; sourceTree = "<group>"; };
+		9FB3F4CD2972D6ED00856919 /* MicrophoneAccessAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneAccessAlert.swift; sourceTree = "<group>"; };
+		9FB3F4CF2972D6FE00856919 /* MatchedNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedNoteView.swift; sourceTree = "<group>"; };
+		9FB3F4D12972D71B00856919 /* MatchedNoteFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedNoteFrequency.swift; sourceTree = "<group>"; };
+		9FB3F4D32972D73C00856919 /* MainNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNoteView.swift; sourceTree = "<group>"; };
+		9FB3F4D52972D75800856919 /* CurrentNoteMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentNoteMarker.swift; sourceTree = "<group>"; };
+		9FB3F4D82972DBA700856919 /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
+		9FB3F4DA2972DBC400856919 /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		9FB3F4DC2972DBE000856919 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		9FB3F4DE2972DC0200856919 /* Color+MusicalDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+MusicalDistance.swift"; sourceTree = "<group>"; };
+		9FB3F4E02972DC2F00856919 /* ColorAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAnimation.swift; sourceTree = "<group>"; };
+		9FB3F4E22972DC5100856919 /* DeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtension.swift; sourceTree = "<group>"; };
+		9FB3F4E52972DE3900856919 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9FB3F4EA2972DE7B00856919 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		9FB3F4EC2972DF7C00856919 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		9FB3F4EE2972DFEE00856919 /* SettingListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListItem.swift; sourceTree = "<group>"; };
+		9FB3F4F42972E06200856919 /* TunerSettingsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerSettingsListItem.swift; sourceTree = "<group>"; };
+		9FB3F4F62972E07E00856919 /* TunerSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerSettingsScreen.swift; sourceTree = "<group>"; };
+		9FB3F4FB2972E24200856919 /* TunerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerScreen.swift; sourceTree = "<group>"; };
+		9FB3F5062972E4EC00856919 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		9FB3F5082972E50F00856919 /* MicrophonePitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophonePitchDetector.swift; sourceTree = "<group>"; };
+		9FB3F50A2972E52800856919 /* Mixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mixer.swift; sourceTree = "<group>"; };
+		9FB3F50C2972E54900856919 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		9FB3F50F2972E57600856919 /* PitchTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchTap.swift; sourceTree = "<group>"; };
+		9FB3F5112972E58C00856919 /* PitchTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchTracker.swift; sourceTree = "<group>"; };
+		9FB3F5142972E61B00856919 /* base.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = base.c; sourceTree = "<group>"; };
+		9FB3F5172972E64C00856919 /* fft.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fft.c; sourceTree = "<group>"; };
+		9FB3F5192972E6F600856919 /* CMicrophonePitchDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMicrophonePitchDetector.h; sourceTree = "<group>"; };
+		9FB3F51C2972E7DB00856919 /* ptrack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ptrack.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F2010C92971D7F500C0B895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F2010C32971D7F500C0B895 = {
+			isa = PBXGroup;
+			children = (
+				9F2010CE2971D7F500C0B895 /* AchordyTesty */,
+				9F2010CD2971D7F500C0B895 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F2010CD2971D7F500C0B895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F2010CC2971D7F500C0B895 /* AchordyTesty.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F2010CE2971D7F500C0B895 /* AchordyTesty */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F4E72972DE5D00856919 /* Settings */,
+				9FB3F4E42972DE2C00856919 /* Theme */,
+				9FB3F4D72972DB9200856919 /* Helpers */,
+				9FB3F4C62972BA0400856919 /* Views */,
+				9FB3F4C52972B9CE00856919 /* Models */,
+				9FB3F4FB2972E24200856919 /* TunerScreen.swift */,
+				9FB3F51F2972E86200856919 /* Sources */,
+				9F2010CF2971D7F500C0B895 /* AchordyTestyApp.swift */,
+				9FB3F4BB2972B8D200856919 /* TunerView.swift */,
+				9F2010D12971D7F500C0B895 /* ContentView.swift */,
+				9F2010D32971D7F600C0B895 /* Assets.xcassets */,
+				9F2010D52971D7F600C0B895 /* Preview Content */,
+			);
+			path = AchordyTesty;
+			sourceTree = "<group>";
+		};
+		9F2010D52971D7F600C0B895 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9F2010D62971D7F600C0B895 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FB3F4C52972B9CE00856919 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F4BD2972B91F00856919 /* TunerData.swift */,
+				9FB3F4BF2972B93A00856919 /* ScaleNote.swift */,
+				9FB3F4C12972B97100856919 /* ModifierPreference.swift */,
+				9FB3F4C32972B99100856919 /* Frequency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FB3F4C62972BA0400856919 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F4C72972BA2200856919 /* TranspositionMenu.swift */,
+				9FB3F4C92972D66B00856919 /* NoteTicks.swift */,
+				9FB3F4CB2972D68C00856919 /* NoteDistanceMarkers.swift */,
+				9FB3F4CD2972D6ED00856919 /* MicrophoneAccessAlert.swift */,
+				9FB3F4CF2972D6FE00856919 /* MatchedNoteView.swift */,
+				9FB3F4D12972D71B00856919 /* MatchedNoteFrequency.swift */,
+				9FB3F4D32972D73C00856919 /* MainNoteView.swift */,
+				9FB3F4D52972D75800856919 /* CurrentNoteMarker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FB3F4D72972DB9200856919 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F4D82972DBA700856919 /* ActivityVC.swift */,
+				9FB3F4DA2972DBC400856919 /* Alignment.swift */,
+				9FB3F4DC2972DBE000856919 /* Color+Extensions.swift */,
+				9FB3F4DE2972DC0200856919 /* Color+MusicalDistance.swift */,
+				9FB3F4E02972DC2F00856919 /* ColorAnimation.swift */,
+				9FB3F4E22972DC5100856919 /* DeviceExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9FB3F4E42972DE2C00856919 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F4E52972DE3900856919 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		9FB3F4E72972DE5D00856919 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F4EA2972DE7B00856919 /* SettingsScreen.swift */,
+				9FB3F4EC2972DF7C00856919 /* AboutScreen.swift */,
+				9FB3F4EE2972DFEE00856919 /* SettingListItem.swift */,
+				9FB3F4F42972E06200856919 /* TunerSettingsListItem.swift */,
+				9FB3F4F62972E07E00856919 /* TunerSettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9FB3F5052972E3F000856919 /* MicDedector */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F5062972E4EC00856919 /* AudioEngine.swift */,
+				9FB3F5082972E50F00856919 /* MicrophonePitchDetector.swift */,
+				9FB3F50A2972E52800856919 /* Mixer.swift */,
+				9FB3F50C2972E54900856919 /* Node.swift */,
+				9FB3F50F2972E57600856919 /* PitchTap.swift */,
+				9FB3F5112972E58C00856919 /* PitchTracker.swift */,
+			);
+			path = MicDedector;
+			sourceTree = "<group>";
+		};
+		9FB3F5132972E5E400856919 /* CMicrophonePitchDetector */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F51E2972E82900856919 /* include */,
+				9FB3F5142972E61B00856919 /* base.c */,
+				9FB3F5172972E64C00856919 /* fft.c */,
+				9FB3F51C2972E7DB00856919 /* ptrack.c */,
+			);
+			path = CMicrophonePitchDetector;
+			sourceTree = "<group>";
+		};
+		9FB3F51E2972E82900856919 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F5192972E6F600856919 /* CMicrophonePitchDetector.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9FB3F51F2972E86200856919 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3F5052972E3F000856919 /* MicDedector */,
+				9FB3F5132972E5E400856919 /* CMicrophonePitchDetector */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F2010CB2971D7F500C0B895 /* AchordyTesty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F2010DA2971D7F600C0B895 /* Build configuration list for PBXNativeTarget "AchordyTesty" */;
+			buildPhases = (
+				9F2010C82971D7F500C0B895 /* Sources */,
+				9F2010C92971D7F500C0B895 /* Frameworks */,
+				9F2010CA2971D7F500C0B895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AchordyTesty;
+			productName = AchordyTesty;
+			productReference = 9F2010CC2971D7F500C0B895 /* AchordyTesty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F2010C42971D7F500C0B895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					9F2010CB2971D7F500C0B895 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = 9F2010C72971D7F500C0B895 /* Build configuration list for PBXProject "AchordyTesty" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F2010C32971D7F500C0B895;
+			productRefGroup = 9F2010CD2971D7F500C0B895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F2010CB2971D7F500C0B895 /* AchordyTesty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F2010CA2971D7F500C0B895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2010D72971D7F600C0B895 /* Preview Assets.xcassets in Resources */,
+				9F2010D42971D7F600C0B895 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F2010C82971D7F500C0B895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB3F5092972E50F00856919 /* MicrophonePitchDetector.swift in Sources */,
+				9FB3F4F72972E07E00856919 /* TunerSettingsScreen.swift in Sources */,
+				9FB3F4CC2972D68C00856919 /* NoteDistanceMarkers.swift in Sources */,
+				9FB3F5122972E58C00856919 /* PitchTracker.swift in Sources */,
+				9FB3F4D92972DBA700856919 /* ActivityVC.swift in Sources */,
+				9FB3F4C02972B93A00856919 /* ScaleNote.swift in Sources */,
+				9FB3F5182972E64C00856919 /* fft.c in Sources */,
+				9FB3F4D22972D71B00856919 /* MatchedNoteFrequency.swift in Sources */,
+				9FB3F4DB2972DBC400856919 /* Alignment.swift in Sources */,
+				9FB3F4EB2972DE7B00856919 /* SettingsScreen.swift in Sources */,
+				9F2010D22971D7F500C0B895 /* ContentView.swift in Sources */,
+				9FB3F4E32972DC5100856919 /* DeviceExtension.swift in Sources */,
+				9FB3F4E12972DC2F00856919 /* ColorAnimation.swift in Sources */,
+				9FB3F50D2972E54900856919 /* Node.swift in Sources */,
+				9F2010D02971D7F500C0B895 /* AchordyTestyApp.swift in Sources */,
+				9FB3F4BE2972B91F00856919 /* TunerData.swift in Sources */,
+				9FB3F4C82972BA2200856919 /* TranspositionMenu.swift in Sources */,
+				9FB3F4D42972D73C00856919 /* MainNoteView.swift in Sources */,
+				9FB3F5102972E57600856919 /* PitchTap.swift in Sources */,
+				9FB3F4CA2972D66B00856919 /* NoteTicks.swift in Sources */,
+				9FB3F4DD2972DBE000856919 /* Color+Extensions.swift in Sources */,
+				9FB3F4D02972D6FE00856919 /* MatchedNoteView.swift in Sources */,
+				9FB3F5072972E4EC00856919 /* AudioEngine.swift in Sources */,
+				9FB3F51D2972E7DB00856919 /* ptrack.c in Sources */,
+				9FB3F4EF2972DFEE00856919 /* SettingListItem.swift in Sources */,
+				9FB3F4E62972DE3900856919 /* Theme.swift in Sources */,
+				9FB3F4D62972D75800856919 /* CurrentNoteMarker.swift in Sources */,
+				9FB3F4BC2972B8D200856919 /* TunerView.swift in Sources */,
+				9FB3F50B2972E52800856919 /* Mixer.swift in Sources */,
+				9FB3F4DF2972DC0200856919 /* Color+MusicalDistance.swift in Sources */,
+				9FB3F4C22972B97100856919 /* ModifierPreference.swift in Sources */,
+				9FB3F4F52972E06200856919 /* TunerSettingsListItem.swift in Sources */,
+				9FB3F5152972E61B00856919 /* base.c in Sources */,
+				9FB3F4C42972B99100856919 /* Frequency.swift in Sources */,
+				9FB3F4CE2972D6ED00856919 /* MicrophoneAccessAlert.swift in Sources */,
+				9FB3F4FC2972E24200856919 /* TunerScreen.swift in Sources */,
+				9FB3F4ED2972DF7C00856919 /* AboutScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9F2010D82971D7F600C0B895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F2010D92971D7F600C0B895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F2010DB2971D7F600C0B895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AchordyTesty/Preview Content\"";
+				DEVELOPMENT_TEAM = WZ6ZG45XVZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batinay.AchordyTesty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F2010DC2971D7F600C0B895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AchordyTesty/Preview Content\"";
+				DEVELOPMENT_TEAM = WZ6ZG45XVZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batinay.AchordyTesty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F2010C72971D7F500C0B895 /* Build configuration list for PBXProject "AchordyTesty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2010D82971D7F600C0B895 /* Debug */,
+				9F2010D92971D7F600C0B895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F2010DA2971D7F600C0B895 /* Build configuration list for PBXNativeTarget "AchordyTesty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2010DB2971D7F600C0B895 /* Debug */,
+				9F2010DC2971D7F600C0B895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F2010C42971D7F500C0B895 /* Project object */;
+}
