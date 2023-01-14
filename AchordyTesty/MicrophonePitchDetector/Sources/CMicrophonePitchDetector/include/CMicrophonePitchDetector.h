@@ -1,10 +1,3 @@
-//
-//  CMicrophonePitchDetector.h
-//  AchordyTesty
-//
-//  Created by Batınay Ünsel on 14.01.2023.
-//
-
 // Copyright AudioKit. All Rights Reserved. Revision History at http://github.com/AudioKit/AudioKit/
 
 #ifndef ZENTUNER_H

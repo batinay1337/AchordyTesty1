@@ -5,8 +5,9 @@
 //  Created by Batınay Ünsel on 14.01.2023.
 //
 
-
+import MicrophonePitchDetector
 import SwiftUI
+import ActivityIndicatorView
 
 struct TunerScreen: View {
     @Environment(\.scenePhase) private var scenePhase
@@ -16,46 +17,54 @@ struct TunerScreen: View {
     @AppStorage("selectedTransposition") private var selectedTransposition = 0
     
     var body: some View {
-        ZStack {
-            TunerView(
-                tunerData: TunerData(pitch: pitchDetector.pitch),
-                modifierPreference: modifierPreference,
-                selectedTransposition: selectedTransposition
-            )
-            .onChange(of: scenePhase) { phase in
-                switch phase {
-                case .active:
-                    startAudio()
-                case .background:
-                    stopAudio()
-                default:
-                    break
-                }
-            }
-            .onDidAppear {
+        ActivityIndicatorView(isVisible: $showLoadingIndicator, type: .scalingDots(count: 3, inset: 6))
+            .frame(width: 44.0, height: 44.0)
+             .foregroundColor(.red)
+        TunerView(
+            tunerData: TunerData(pitch: pitchDetector.pitch),
+            modifierPreference: modifierPreference,
+            selectedTransposition: selectedTransposition
+        )
+        .onChange(of: scenePhase) { phase in
+            switch phase {
+            case .active:
                 startAudio()
-            }
-            .onDidDisappear {
+            case .inactive, .background:
+                stopAudio()
+            @unknown default:
                 stopAudio()
             }
-            .alert(isPresented: $pitchDetector.showMicrophoneAccessAlert) {
-                MicrophoneAccessAlert()
-            }
-            ActivityIndicatorView(
-                isVisible: $showLoadingIndicator,
-                type: .scalingDots(count: 3, inset: 6)
-            )
-            .frame(width: 44.0, height: 44.0)
-            .foregroundColor(Theme.redColor)
+        }
+        .onAppear(perform: {
+            startAudio()
+            UIApplication.shared.isIdleTimerDisabled = true
+        })
+        .onDisappear(perform: {
+            stopAudio()
+        })
+        .alert(isPresented: $pitchDetector.showMicrophoneAccessAlert) {
+            MicrophoneAccessAlert()
         }
     }
     
     private func startAudio() {
-        pitchDetector.start()
+        showLoadingIndicator = true
+        DispatchQueue.main.async {
+            pitchDetector.start()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25, execute: DispatchWorkItem(block: {
+                showLoadingIndicator = false
+            }))
+        }
     }
     
     private func stopAudio() {
-        pitchDetector.stop()
+        showLoadingIndicator = true
+        DispatchQueue.main.async {
+            pitchDetector.stop()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25, execute: DispatchWorkItem(block: {
+                showLoadingIndicator = false
+            }))
+        }
     }
 }
 

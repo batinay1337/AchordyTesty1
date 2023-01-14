@@ -1,10 +1,3 @@
-//
-//  fft.c
-//  AchordyTesty
-//
-//  Created by Batınay Ünsel on 14.01.2023.
-//
-
 /*
     FFT library
     based on public domain code by John Green <green_jt@vsdec.npt.nuwc.navy.mil>

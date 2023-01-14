@@ -1,10 +1,3 @@
-//
-//  ptrack.c
-//  AchordyTesty
-//
-//  Created by Batınay Ünsel on 14.01.2023.
-//
-
 /*
  * PTrack
  *
@@ -48,7 +41,7 @@
 #define NPARTIALONSET ((int)(sizeof(partialonset)/sizeof(ZTFLOAT)))
 
 #ifndef M_PI
-#define M_PI        3.14159265358979323846
+#define M_PI		3.14159265358979323846
 #endif
 
 static const ZTFLOAT partialonset[] =

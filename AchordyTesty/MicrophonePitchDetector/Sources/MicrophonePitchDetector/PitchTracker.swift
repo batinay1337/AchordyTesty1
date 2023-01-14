@@ -1,10 +1,3 @@
-//
-//  PitchTracker.swift
-//  AchordyTesty
-//
-//  Created by Batınay Ünsel on 14.01.2023.
-//
-
 import CMicrophonePitchDetector
 
 final class PitchTracker {

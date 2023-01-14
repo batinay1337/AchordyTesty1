@@ -1,10 +1,3 @@
-//
-//  MicrophonePitchDetector.swift
-//  AchordyTesty
-//
-//  Created by Batınay Ünsel on 14.01.2023.
-//
-
 import AVFoundation
 import SwiftUI
 #if os(watchOS)
@@ -28,8 +21,8 @@ public final class MicrophonePitchDetector: ObservableObject {
         do {
             try engine.start()
             tracker.start()
-        } catch(let err){
-            print(err.localizedDescription)
+        } catch {
+            // TODO: Handle error
         }
     }
 
@@ -37,8 +30,8 @@ public final class MicrophonePitchDetector: ObservableObject {
         guard hasMicrophoneAccess else { return }
         do {
             try engine.stop()
-        } catch(let err) {
-            print(err.localizedDescription)
+        } catch {
+            // TODO: Handle error
         }
     }
 
